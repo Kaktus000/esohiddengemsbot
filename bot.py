@@ -10,8 +10,7 @@ for line in sys.stdin:
         config = data.get("config", {})
         width = config.get("width")
         height = config.get("height")
-        print(f"Random walker (Python) launching on a {width}x{height} map",
-              file=sys.stderr, flush=True)
-    move = random.choice(["N", "S", "E", "W"])
+        print(f"Let me Cook")
+        
     print(move, flush=True)
     first_tick = False
