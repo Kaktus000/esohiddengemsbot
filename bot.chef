@@ -1,0 +1,24 @@
+Random Pie Walker.
+
+This recipe decides which way to go based on the mixing bowl.
+
+Ingredients.
+78 g north  # ASCII 'N'
+83 g south  # ASCII 'S'
+69 g east   # ASCII 'E'
+87 g west   # ASCII 'W'
+1 g counter
+
+Method.
+Take counter from refrigerator.       # Irgendeine Zahl einlesen, um den Tick zu starten
+Put north into the mixing bowl.
+Put south into the mixing bowl.
+Put east into the mixing bowl.
+Put west into the mixing bowl.
+Mix the mixing bowl well.              # Die Richtungen werden im Bowl-Stack zufällig gemischt
+Fold counter into the mixing bowl.     # Nimm die oberste Richtung vom Stack
+Liquefy counter.                       # Stelle sie auf "Ausgabe als Zeichen"
+Pour contents of the mixing bowl into the baking dish.  # Bereite die Ausgabe vor
+Refrigerate.                           // Beende das Programm und gib die Baking dish aus
+
+Serves 1.
