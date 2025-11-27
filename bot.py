@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-import sys, json, random
+import sys, json, random, chefint, os
 
 random.seed(1)
 first_tick = True
@@ -10,7 +10,8 @@ for line in sys.stdin:
         config = data.get("config", {})
         width = config.get("width")
         height = config.get("height")
-        print(f"Let me Cook")
-        
-    print(move, flush=True)
+    cheffile = os.open("bot.chef")
+    c = chefint.Chef(cheffile.read())
+    output = c.parse()
+    print(output, flush=True)
     first_tick = False
